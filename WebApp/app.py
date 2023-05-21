@@ -7,9 +7,11 @@ import openai
 #import time
 #import re
 
-"""https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run File Path"""
+"""https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run (File Path)"""
 
-st.title("WebApp")
+openai.api_key = st.secrets["api_key"]
+
+st.title("Test")
 
 with st.form("form"):
     User_input = st.text_input("Prompt")
