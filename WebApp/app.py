@@ -1,11 +1,6 @@
 #import os
-#from gtts import gTTS
-#from playsound import playsound
-#from pydub import AudioSegment
 import streamlit as st
 import openai
-#import time
-#import re
 
 """https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run (File Path)"""
 
