@@ -4,7 +4,7 @@ import openai
 
 """https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run (File Path)"""
 
-openai.api_key = st.secrets["db_api_key"]
+openai.api_key = st.secrets["db_ApiKey"]
 
 st.title("Test")
 
