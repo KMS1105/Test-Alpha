@@ -3,7 +3,7 @@ import openai
 
 """https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run (File Path)"""
 
-openai.api_key = st.secrets["db_ApiKey"]
+openai.api_key = "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"
 
 st.title("Test")
 
