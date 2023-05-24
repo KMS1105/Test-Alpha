@@ -3,7 +3,7 @@ import openai
 
 """https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run (File Path)"""
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 st.title("Test")
 
@@ -18,13 +18,13 @@ if submit and User_input:
         "content" : "Imagine the detail appeareance of the input., briefly"
     }]
     
-    with st.spinner("Waiting for DallE..."):
+    """with st.spinner("Waiting for DallE..."):
         DallE_response = openai.Image.create(
             prompt=User_input,
             size="1024x1024"
         )
 
-    st.image(DallE_response["data"][0]["url"])
+    st.image(DallE_response["data"][0]["url"])"""
 
     GPT_Prompt.append({
         "role" : "system",
