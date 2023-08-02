@@ -24,25 +24,26 @@ with tab1:
             time.sleep(0.1)
             st.write(IDPW)
       
-with tab2:   
-    st.title("Test") 
-    
-    with st.form("form2"):
-        User_input = st.text_input(label="ID", max_chars=10)
-        User_input2 = st.text_input(label="PassWord", max_chars=10)
-        submit = st.form_submit_button("Submit")
-             
-    if submit and User_input and User_input2:
-        with st.spinner("Wait..."):
-            if User_input == IDPW[0]:
-                if User_input2 == IDPW[1]:
-                    st.write('Pass')    
-        
-                else:
-                    st.write('ID나 PW가 일치 하지 않음')
+        with tab2:   
+            st.title("Test") 
+            st.write(IDPW)
             
-            else:
-                    st.write('ID나 PW가 일치 하지 않음')
+            with st.form("form2"):
+                User_input = st.text_input(label="ID", max_chars=10)
+                User_input2 = st.text_input(label="PassWord", max_chars=10)
+                submit = st.form_submit_button("Submit")
+                    
+            if submit and User_input and User_input2:
+                with st.spinner("Wait..."):
+                    if User_input == IDPW[0]:
+                        if User_input2 == IDPW[1]:
+                            st.write('Pass')    
+                
+                        else:
+                            st.write('ID나 PW가 일치 하지 않음')
+                    
+                    else:
+                            st.write('ID나 PW가 일치 하지 않음')
                 
                 
 
