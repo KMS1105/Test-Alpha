@@ -8,7 +8,7 @@ IDPW = []
 with tab1:
     st.title("Test") 
     
-    with st.form("Prompt"):
+    with st.form("form"):
         User_setting = st.text_input("ID")
         User_setting2 = st.text_input("PassWord")
         submit = st.form_submit_button("Submit")
@@ -26,7 +26,7 @@ with tab1:
 with tab2:   
     st.title("Test") 
     
-    with st.form("Setting"):
+    with st.form("form"):
         User_setting = st.text_input("ID")
         User_setting2 = st.text_input("PassWord")
         submit = st.form_submit_button("Submit")
