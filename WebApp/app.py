@@ -21,6 +21,7 @@ with tab1:
             IDPW.append(User_setting2)
             time.sleep(0.1)
             st.write("Save!")
+            time.sleep(0.1)
             st.write(IDPW)
       
 with tab2:   
