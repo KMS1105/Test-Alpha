@@ -18,6 +18,7 @@ with tab1:
         with st.spinner("Saving..."):
             IDPW.append(User_setting)
             IDPW.append(User_setting2)
+            st.write("Save!")
       
 with tab2:   
     st.title("Test") 
@@ -28,8 +29,8 @@ with tab2:
         submit = st.form_submit_button("Submit")
              
     if submit and User_input and User_input2:
-        with st.spinner("Saving..."):
-            if User_input == IDPW[0] and User_input2 == IDPW(1):
+        with st.spinner("Wait..."):
+            if User_input == IDPW[0] and User_input2 == IDPW[1]:
                 st.write('Pass')    
         
             else:
