@@ -10,8 +10,8 @@ with tab1:
     st.title("Test") 
     
     with st.form("form1"):
-        User_setting = st.text_input("ID")
-        User_setting2 = st.text_input("PassWord")
+        User_setting = st.text_input(label="ID", max_chars=10)
+        User_setting2 = st.text_input(label="PassWord", max_chars=10)
         submit = st.form_submit_button("Submit")
 
 
@@ -28,8 +28,8 @@ with tab2:
     st.title("Test") 
     
     with st.form("form2"):
-        User_input = st.text_input("ID")
-        User_input2 = st.text_input("PassWord")
+        User_input = st.text_input(label="ID", max_chars=10)
+        User_input2 = st.text_input(label="PassWord", max_chars=10)
         submit = st.form_submit_button("Submit")
              
     if submit and User_input and User_input2:
