@@ -21,7 +21,7 @@ with tab1:
 with tab2:   
     st.title("Test") 
     
-    with st.form("form"):
+    with st.form("form2"):
         User_input = st.text_input("ID")
         User_input2 = st.text_input("PassWord")
         submit = st.form_submit_button("Submit")
