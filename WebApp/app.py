@@ -18,6 +18,7 @@ with tab1:
         with st.spinner("Saving..."):
             IDPW.append(User_setting)
             IDPW.append(User_setting2)
+            print(IDPW)
             st.write("Save!")
       
 with tab2:   
