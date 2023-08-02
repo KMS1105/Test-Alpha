@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 """https://www.youtube.com/watch?v=8u2PngR2xpM, Terminal=streamlit run (File Path)"""
 
@@ -18,8 +19,9 @@ with tab1:
         with st.spinner("Saving..."):
             IDPW.append(User_setting)
             IDPW.append(User_setting2)
-            print(IDPW)
+            time.sleep(0.1)
             st.write("Save!")
+            st.write(IDPW)
       
 with tab2:   
     st.title("Test") 
