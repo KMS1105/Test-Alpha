@@ -34,11 +34,15 @@ with tab2:
              
     if submit and User_input and User_input2:
         with st.spinner("Wait..."):
-            if User_input == IDPW[0] and User_input2 == IDPW[1]:
-                st.write('Pass')    
+            if User_input == IDPW[0]:
+                if User_input2 == IDPW[1]:
+                    st.write('Pass')    
         
+                else:
+                    st.write('ID나 PW가 일치 하지 않음')
+            
             else:
-                st.write('ID나 PW가 일치 하지 않음')
+                    st.write('ID나 PW가 일치 하지 않음')
                 
                 
 
