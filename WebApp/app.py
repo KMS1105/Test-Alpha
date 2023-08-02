@@ -17,18 +17,13 @@ with tab1:
     if submit and User_setting and User_setting2:
         with st.spinner("Saving..."):
             IDPW.append([User_setting, User_setting2])
-
-    with st.form("Prompt"):
-        User_input = st.text_input("ID")
-        User_input2 = st.text_input("PassWord")
-        submit = st.form_submit_button("Submit")
       
 with tab2:   
     st.title("Test") 
     
     with st.form("form"):
-        User_setting = st.text_input("ID")
-        User_setting2 = st.text_input("PassWord")
+        User_input = st.text_input("ID")
+        User_input2 = st.text_input("PassWord")
         submit = st.form_submit_button("Submit")
              
     if submit and User_input and User_input2:
